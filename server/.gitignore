@@ -1,2 +1,4 @@
 .env*
 content/
+data/*
+data/
