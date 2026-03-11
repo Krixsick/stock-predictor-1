@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv sync)",
+      "Bash(npm install lightweight-charts @tanstack/react-query lucide-react)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx tsc -b)",
+      "Bash(uv run python -c \"from data_loader import load_all; data = load_all\\(\\); print\\(f''Loaded {len\\(data\\)} tickers''\\); [print\\(f''  {k}: {v.shape}''\\) for k,v in data.items\\(\\)]\")",
+      "Bash(uv run python -c \":*)",
+      "Bash(uv run uvicorn main:app --port 8000)",
+      "Bash(curl -s http://localhost:8000/api/tickers)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
